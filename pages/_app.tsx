@@ -12,6 +12,7 @@ const { chains, provider, webSocketProvider } = configureChains(
     chain.polygon,
     chain.optimism,
     chain.arbitrum,
+    chain.goerli,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true'
       ? [chain.goerli]
       : []),
@@ -20,7 +21,7 @@ const { chains, provider, webSocketProvider } = configureChains(
     alchemyProvider({
       // This is Alchemy's default API key.
       // You can get your own at https://dashboard.alchemyapi.io
-      apiKey: '_gg7wSSi0KMBsdKnGVfHDueq6xMB9EkC',
+      apiKey: 'lmr38bBwfCgF2dTpxOAnRnvHi5-BfDWG',
     }),
     publicProvider(),
   ]
